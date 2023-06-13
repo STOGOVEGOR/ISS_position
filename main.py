@@ -3,14 +3,15 @@ import datetime as dt
 import smtplib
 import time
 
-MY_LAT = 42.460550
-MY_LNG = 18.524932
+# Enter your coordinates
+MY_LAT = 45.460550
+MY_LNG = 20.524932
 
 
 def send_email():
-    my_email = "severeff@gmail.com"
-    to_email = "egorii@list.ru"
-    password = "qgbucfjtkecefapc"
+    my_email = "email1@gmail.com"
+    to_email = "email2@gmail.com"
+    password = "password"
 
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
